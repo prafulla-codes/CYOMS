@@ -30,7 +30,7 @@ CYOMS allows configuration of basic server settings, by default it crafts the la
  1. The installer will guide you upon the installation steps which are as follows:
     * Select the folder where you would like to install CYOMS
     ![Installation Step 1](resources/images/installation_1.png)
-    * Select if you want to create a desktop icon for the application.
+    * Tick *'Create a desktop icon'* if you want to create a desktop icon for the application.
     Then click **Next**
     ![Installation Step 2](resources/images/installation_2.png)
     * Click **Install**
