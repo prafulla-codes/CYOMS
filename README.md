@@ -15,7 +15,7 @@
 
 ## Preview 
 
-CYOMS will soon support craft-bukkit and spigot servers, as of now it allows creation of vanilla server.
+CYOMS allows creation of **Vanilla** servers and will soon support **Craft-bukkit** and **Spigot** servers.
 
 ![CYOMS Preview 1](resources/images/preview_1.png)
 
