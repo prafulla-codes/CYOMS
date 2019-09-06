@@ -26,10 +26,16 @@ CYOMS allows configuration of basic server settings, by default it crafts the la
 ---
 ## Installation
 
-1. Install using **CYOMS_setup.exe** file.
-1. Installer will ask you to select the folder path where you would like to install the application.
+ 1. Install using **CYOMS_setup.exe** file
+ 1. The installer will guide you upon the installation steps which are as follows:
+    * Select the folder where you would like to install CYOMS
+    ![Installation Step 1](resources/images/installation_1.png)
+    * Select if you want to create a desktop icon for the application.
+    Then click **Next**
+    ![Installation Step 2](resources/images/installation_2.png)
+    * Click **Install**
+    * Wait till the installer finishes installing CYOMS
+    ![Installation Step 3](resources/images/installation_3.png)
 
-    <img src="resources/images/installation_1.png" border="3">
-
-    Select the folder path and hit **"next"**
-
+1. After installation completes, you will be asked if you want to launch CYOMS
+![Installation Finished](resources/images/installation_4.png)
