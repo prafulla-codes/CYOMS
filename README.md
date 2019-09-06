@@ -37,5 +37,6 @@ CYOMS allows configuration of basic server settings, by default it crafts the la
     * Wait till the installer finishes installing CYOMS
     ![Installation Step 3](resources/images/installation_3.png)
 
-1. After installation completes, you will be asked if you want to launch CYOMS
-![Installation Finished](resources/images/installation_4.png)
+    * After installation completes, you will be asked if you want to launch CYOMS
+!   ![Installation Finished](resources/images/installation_4.png)
+1. If you get the above screen you've **successfully** installed CYOMS
