@@ -21,7 +21,7 @@ CYOMS will soon support craft-bukkit and spigot servers, as of now it allows cre
 
 CYOMS allows configuration of basic server settings, by default it crafts the latest version of server on local IP address.
 
-<img src="resources/images/preview_2.png" height="600" width="70%">
+<img src="resources/images/preview_2.png" height="50%" width="70%">
 
 ---
 ## Installation
