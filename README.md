@@ -29,7 +29,7 @@ CYOMS allows configuration of basic server settings, by default it crafts the la
 1. Install using **CYOMS_setup.exe** file.
 1. Installer will ask you to select the folder path where you would like to install the application.
 
-    ![CYOMS Installation Step 1](resources/images/installation_1.png)
+    <img src="resources/images/installation_1.png" style="border: 3px solid black">
 
     Select the folder path and hit **"next"**
 
