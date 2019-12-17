@@ -1,0 +1,37 @@
+{
+  "name": "cyoms",
+  "version": "2.0.0",
+  "description": "CYOMS is a desktop application create minecraft servers easily and quickly",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pika1998/CYOMS.git"
+  },
+  "keywords": [
+    "CYOMS",
+    "\"How",
+    "to",
+    "create",
+    "a",
+    "minecraft",
+    "server\"",
+    "\"Create",
+    "minecraft",
+    "server\"",
+    "minecraft",
+    "\"minecraft",
+    "servers\""
+  ],
+  "author": "Prafulla Raichurkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pika1998/CYOMS/issues"
+  },
+  "homepage": "https://pika1998.github.io/CYOMS",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
