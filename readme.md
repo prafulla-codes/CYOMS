@@ -15,6 +15,6 @@ Server configuration is completely GUI based. No need to download server jar fil
 
 [![](resources/images/download_windows_cyoms.png)](https://github.com/Pika1998/CYOMS/releases/download/v1.0.0/CYOMS_setup.exe)
 
-[![](resources/images/download_linux_cyoms.png)](https://github.com/Pika1998/CYOMS/releases/download/v1.0.0/CYOMS_setup.exe)
+[![](resources/images/download_linux_cyoms.png)](https://github.com/Pika1998/CYOMS/releases/download/v2.0.0/cyoms_2.0.0_amd64.deb)
 
 ## For more information visit Official Website https://www.cyoms.tech
