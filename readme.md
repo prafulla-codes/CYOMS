@@ -24,7 +24,7 @@ Server configuration is completely GUI based. No need to download server jar fil
 
 <br>
 <br>
-<img src="resources/images/preview4.png" width="100%" height="400px">
-<img src="resources/images/preview5.png" width="100%" height="400px">
+<img src="resources/images/preview4.png" width="100%">
+<img src="resources/images/preview5.png" width="100%">
 
 
