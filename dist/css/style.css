@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Oregano&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Saira', sans-serif;
+    height: wrap;
+}
+blockquote {
+    background-color: #dfe4ea;
+    padding: 1rem;
+    color: black;
+}
+.center{
+    display: block;
+    margin: auto;
+}
+.btn {
+    background-color: #fff;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.btn:hover{
+    background-color: blue;
+    color: white;
+}
+p{
+    font-weight: 50;
+}
+header{
+    height: 50px;
+}
+
+h1{
+    font-family: 'Oregano','sans-serif';
+    font-weight: 500;
+    font-size: 2rem;
+}
+h2{
+    font-size:1.1rem;
+}
+
+#landing_logo_content {
+    display: flex;
+    flex: 0 1 40vw;
+    min-height: 50vh;
+    text-align: center;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    background-color: black;
+    padding-left: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#landing_logo_content h1{
+    color:greenyellow
+}
+#landing_logo_content h2 {
+    color: #fff;
+    font-weight:200;
+}
+
+#landing_download_content {
+    display: flex;
+    flex: 0 1 40vw;
+    min-height: 50vh;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+#download_for_windows:hover , #download_for_linux:hover {
+    cursor: pointer;
+    border: 3px solid blue;
+    border-radius: 15px;
+}
+main
+{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: none;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+    background-color: #dfe4ea;
+    box-shadow: 0 0px 1000px 60px rgba(0, 0, 0, 0.572);
+}
+#quick_setup{
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+}
+
+video{
+    width: 100%;
+    border: 0.4rem solid yellowgreen;
+}
+
+#social_container{
+    text-align: center;
+}
+
