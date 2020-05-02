@@ -1,0 +1,11 @@
+{
+    "name":"CYOMS",
+    "dest": "release-builds/",
+    "icon": "resources/icons/android-chrome-192x192.png",
+    "categories": [
+      "Development"
+    ],
+    "lintianOverrides": [
+      "changelog-file-missing-in-native-package"
+    ]
+  }

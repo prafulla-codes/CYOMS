@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CYOMS - Craft Your Own Minecraft Server</title>
+    <!-- Oregano Font-->
+    <link href="https://fonts.googleapis.com/css?family=Oregano&display=swap" rel="stylesheet">
+    <!-- Saira Font -->
+    <link href="https://fonts.googleapis.com/css?family=Saira&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- FontAwesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div id="black_patch"></div>
+    <!-- HEADER BAR -->
+    <div id="container">
+    <div id="headerbar">
+            <p style="float: right;vertical-align: top;margin-top: 2px;color: #585858;font-family:'Oregano',cursuie;margin-right: 10px;">v2.0.0</p>
+            <h2 style="margin-left: 15px;padding:15px;color:black;vertical-align: top;"> <img src="../resources/icons/android-chrome-192x192.png" style="width: 70px;height: 60px;border:3px solid black;border-radius:10px;margin-top:-12px;vertical-align: top;"> Craft Your Own Minecraft Server </h2>
+
+    </div>
+    <div id="left_pane">
+        <br>
+        <div id="createVanilla" class="cyoms_button" title="Craft Vanilla Server">
+            <img src="../resources/images/java.png" class="icon"> 
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<h2 style="vertical-align: middle;"> Craft Vanilla Server </h2>
+        </div>
+        <br>
+        <div id="createBukkit"  class="cyoms_button" style="background-color: rgba(0,0,0);">
+            <br>
+                <h2 style="color:white"> CraftBukkit - Coming Soon...</h2>
+        </div>
+        <br>
+        <div id="createSpigot" class="cyoms_button" style="background-color: rgba(0,0,0);">   
+            <br>
+            &nbsp<h2 style="color:white"> Spigot - Coming Soon...</h2>
+            </div>
+        <br>
+        <!-- Quick Setup-->
+        <div class="cyoms_container" style="height: 11rem;padding-bottom: 5rem;">
+            <h2 > Quick Setup</h2>
+            <p> Want to play with friends ASAP?, follow the tutorial to quickly setup your own private server with the help of LogMeInHamachi</p>
+            <br>
+            <div id="quick_setup_button" target="_blank" onclick="window.open('https://cyoms.tech#quick_setup','cyoms','height=800')">
+                <h2 style="color:black" id="quick_setup_header"  title="Start Quick Setup">Start Quick Setup</h2>
+            </div>
+        </div>
+        <!-- End of Quick Setup-->
+
+    </div>
+    <div id="center_pane">
+            <br>
+            <!-- Prerequisites -->
+            <div class="cyoms_container" style="padding: 20px;height: 14rem;">
+                    <h2> Prerequisites</h2>
+                    <p>Before you start creating a server, please make sure you have the following for a smooth experience.</p>
+                   <p>
+                        1) Java (JDK 8 or Above).
+                         <span style="color:green;font-weight:bold">  <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" title="Download JDK" target="_blank" >Download Now</a></span>
+                   </p>
+                   <p>
+                       2) Minumum 150 MB  Hard Disk Space.
+                   </p>
+                   <p>
+                       3) Minimum Intel Core 2 Duo or AMD Athlon 64 x2
+                   </p>
+                   <br>
+            </div>
+            <!-- End of Prerequisites-->
+            <br>
+            <!-- What's New-->
+            <div class="cyoms_container" style="height: 9.4rem;padding:20px;">
+                    <h2> What’s New?</h2>
+                 <p>+ Now Supports Windows and Linux</p>
+                 <p>+ Full Support For Vanilla</p>
+                 <p>+ Bug Fixes from v1.0.0</p>
+                   <br>
+            </div>
+            <!-- End Of What's New-->
+            <br>
+            <div class="cyoms_container" style="height: 3rem;padding:20px;">
+                    <!-- Github Support-->
+                    <a href="https://github.com/Pika1998/CYOMS" target="_blank" title="GitHub | Pika1998/CYOMS">
+                    <i class="fa fa-github-square" style="color:black;font-size:4rem;" aria-hidden="true"></i>
+                    </a>
+                    <!-- Facebook Support-->
+                    <a href="https://www.facebook.com/CYOMS" target="_blank" title=" Facebook | CYOMS">
+                    &nbsp&nbsp&nbsp&nbsp<i class="fa fa-facebook-official" style="color:#3b5998;font-size:4em" aria-hidden="true"></i></a>
+                    <!-- Twitter Support-->
+                    <a href="https://twitter.com/CYOMS_11" target="_blank" title=" Twitter | CYOMS">
+                    &nbsp&nbsp&nbsp&nbsp<i class="fa fa-twitter-square" style="color:#00acee;font-size:4em" aria-hidden="true"></i>
+                    </a>
+
+            </div>
+    </div>
+    <div id="right_pane">
+        <br>
+            <div class="cyoms_container" id="feedback_option" style="height: 14rem;padding:20px;text-align: center;" title="Give Feedback">
+                <br>
+                    <i style="text-align: center;font-size: 6em" class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    <h2> Give Your Feedback</h2>
+                    <p>
+                            Feel free to share your experiences and ideas ^_^
+                    </p>
+
+            </div>
+            <div style="position: absolute;right: 0;" >
+            <div class="talk-bubble tri-right round right-in" style="position:inherit;top:0;right:0;width:50%;z-index: 2;margin-right: 49%;margin-top: 19%">
+                <div class="talktext">
+                  <p style="color:black;" id="chat_dialog"> Want to create a server? No Big Deal..</p>
+                </div>
+            </div>
+            <img src="../resources/images/minecraft_character.png" id="steve_container" style="float:right;height: 100%;width: 80%;">
+
+        </div>
+    </div>
+</div>
+<div id="feedback_container">
+    <h3> Your Email : </h3>
+    <input type="email" style="width: 98%;" id="senderEmail">
+    <br>
+    <h3> Feedback </h3>
+    <textarea style="width: 98%;height: 40%;resize: none;" id="feedback_text" ></textarea>
+    <h2><button id="submitFeedback" onclick="submitFeedback()" style="margin-left: auto;margin-right: auto;display: block;"> Submit Feedback</button></h2>
+</div>
+
+    <div id="footer_slim">
+        &nbsp&nbsp&nbsp<a href="https://github.com/Pika1998" target="_blank" style="color:black" title="GitHub | Prafulla Raichurkar">https://github.com/Pika1998 </a>
+        <h2> Created By Prafulla Raichurkar</h2>
+    </div>
+    <script>
+        const electron = require('electron');
+   
+        const {ipcRenderer} = electron;
+        let createVanillaWindow,createBukkitWindow,createSpigotWindow;
+  
+        // On Click of Create Vanilla
+        document.getElementById("createVanilla").addEventListener('click',()=>{
+            ipcRenderer.send('displayCreateVanilla')
+        })
+        // On Click of Create Bukkit
+        document.getElementById("createBukkit").addEventListener('click',()=>{
+            ipcRenderer.send('startCreateBukkit')
+
+        })
+        // On Click of Create Bukkit
+        document.getElementById("createSpigot").addEventListener('click',()=>{
+            ipcRenderer.send('startCreateSpigot')
+        })
+        
+        // On Click of Feedback Option
+        document.getElementById("feedback_option").addEventListener('click',()=>{
+            document.getElementById("feedback_container").style.display="block";
+            document.getElementById("black_patch").style.display="block";
+        })
+        // On click of black patch
+        document.getElementById("black_patch").addEventListener('click',()=>{
+            document.getElementById("feedback_container").style.display="none";
+            document.getElementById("black_patch").style.display="none";
+        })
+    var chat_dialog = document.getElementById("chat_dialog");
+    var steve_container = document.getElementById("steve_container");
+    steve_container.addEventListener("mouseenter",()=>{
+        var dialogues=["Hi I am Steve. Nice to meet you :)","Having Difficulties? feel free to share your issues in feedback section.","Do you feel herobrine exists?"]
+        var dialogue = dialogues[Math.floor(Math.random()*dialogues.length)];
+        chat_dialog.innerHTML=dialogue;
+        if(dialogue==dialogues[2])
+        {
+            chat_dialog.style.color="red";
+        }
+        else
+        {
+            chat_dialog.style.color="blue";
+        }
+    })
+    steve_container.addEventListener("mouseout",()=>{
+        chat_dialog.innerHTML="Want to create a server? No Big Deal..";
+        chat_dialog.style.color="black";
+    })
+
+    function submitFeedback(){
+        feedback = document.getElementById("feedback_text").value;
+        senderEmail = document.getElementById("senderEmail").value;
+        if(feedback!="" && senderEmail!="")
+        {
+            ipcRenderer.send('submitFeedback',{'feedback':feedback,'senderEmail':senderEmail})
+        }
+        else
+        {
+            alert("Feedback OR sender email cannot be empty")
+
+        }
+    }
+
+    ipcRenderer.on("feedback_sent",(e,data)=>{
+        alert(data.message);
+        document.getElementById("feedback_container").style.display="none";
+        document.getElementById("black_patch").style.display="none";
+    })
+    ipcRenderer.on("feedback_failed",(e,data)=>{
+        alert(data.message);
+    })
+    </script>
+</body>
+</html>

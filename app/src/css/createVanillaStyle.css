@@ -1,0 +1,328 @@
+html, body{
+    /*  background: linear-gradient(to bottom right, rgba(17, 55, 191, 0.91) 11.22%, rgba(96, 197, 210, 0.93) 97.36%); */
+      width: 100%;
+      font-family: 'Saira',sans-serif;
+      color: #5F5656;
+      margin: 0;
+      padding: 0;
+      vertical-align: middle;
+      height: 100%;
+  }
+
+
+#container {
+    background: linear-gradient(to bottom right,blue, cyan);
+    min-height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+
+/* Font Related */
+
+h2{
+    font-family: 'Oregano', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    color:black;
+    }
+
+
+/* Main Divs */
+#headerbar {
+    width: 100%;
+    height: 70px;
+    margin:0;
+    padding-top: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.27);
+    }
+
+#basic_settings_container{
+    width: 100%;
+    width: 96%;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: none;
+}
+
+#basic_settings_container1{
+    float: left;
+    height: 100%;
+    width: 34%;
+    padding: 12px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0px 1px 15px 0px black;
+}
+#basic_settings_container2{
+    float: center;
+    height: 100%;
+    width: 30%;
+    padding: 12px;
+    margin-left: 2%;
+    display: inline-block;
+    box-shadow: 0px 1px 15px 0px black;
+    background-color: white;
+}
+#basic_settings_container3{
+    float: right;
+    height: 100%;
+    display: inline-block;
+    width: 28%;
+    padding: 12px;
+    background-color: white;
+    box-shadow: 0px 1px 15px 0px black;
+    margin-right: 2%s;
+}
+#advanced_settings_container{
+    width: 95%;
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 1px 15px 0px black
+}
+.advanced_settings_subcontainer{
+    width:15%;
+    height: 85%;
+    padding: 10px;
+    margin-left: 15px;
+    display: inline-block;
+}
+#advanced_settings_content{
+    display: none;
+}
+#advanced_settings_header:hover{
+    cursor: pointer;
+}
+/******************/
+#craftServerButton{
+    width: 300px;
+    height: 70px;
+    background: linear-gradient(100.05deg, #6AE032 1.51%, rgba(75, 238, 199, 0.8) 106.34%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#closeButton{
+    width: 300px;
+    height: 70px;
+    background: linear-gradient(100.05deg, rgb(224, 56, 50) 1.51%, rgb(231, 209, 110) 106.34%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#closeButton:hover{
+    cursor: pointer;
+}
+#craftServerButton:hover{
+    cursor: pointer;
+}
+/**** Input Formatting ***/
+
+input,textarea {
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 30px;
+    margin-top: 0px;
+    padding: 5px;
+    padding-top: 0px;
+    font-family: 'Saira',sans-serif;
+    color: black;
+    padding-left: 15px;
+}
+label {
+    vertical-align: top;
+    color: black;
+    margin-left: 2px;
+    font-size: 1.2em;
+}
+input[type="radio"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+     height: 30px;
+     width: 15px;
+     margin: 0;
+     display: inline-block;
+     border: 5px solid black;
+     border-radius: 45%;
+}
+.loading_panel_button{
+    margin-left:auto;margin-right:auto;display:block;height:50px;background-color:#fff;border:3px solid black;border-radius: 5px;width: 200px;
+}
+.loading_panel_button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+input[type="radio"]:checked{
+    background-color:greenyellow;
+}
+select {
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 0px;
+    padding: 5px;
+    font-family: 'Saira',sans-serif;
+    color: black;
+    padding-left: 15px;
+    background-color: white;
+}
+
+#loading_panel{
+    width:250px;
+    height: wrap;
+    word-wrap: break-word;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 4px 0px black;
+    padding: 40px;
+    border-radius: 10px;
+    top:25%;
+    left: 40%;
+    z-index: 2;
+    font-size: 1.4em;
+    display: none;
+}
+#black_patch{
+    width:100%;
+    top: 0;
+    height:100%;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    display: none;
+    background-color: rgba(0,0,0,0.95);
+}
+
+@keyframes expand {
+  from{display: none;}
+  to{display: block;}
+}
+
+/* If Width is less than between 500-1600px */
+@media only screen and (min-width:800px) and (max-width:1600px)
+{
+
+      h2{
+        font-family: 'Oregano', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        margin-top: 0;
+        margin-bottom: 5px;
+        color:black;
+        }
+    #basic_settings_container{
+        display: block;
+        height: 200px;
+        background-color:none;
+        box-shadow: none;
+    }
+    label {
+        vertical-align: top;
+        color: black;
+        margin-left: 2px;
+        font-size: 0.8em;
+    }
+    #basic_settings_container1 {
+        width: 55%;
+
+    }
+    #basic_settings_container2 {
+        width: 36%;
+        padding: 15px;
+    }
+    #basic_settings_container3 {
+        width: 95%;
+        float: left;
+        height: 150px;
+        margin-top: 15px;
+        margin-right: auto;   
+    }
+    #advanced_settings_container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 190px;
+        background-color: white;
+        box-shadow: 0px 1px 15px 0px black
+    }
+    .advanced_settings_subcontainer{
+        width: 20%;
+    }
+
+}
+@media only screen and (min-width:0px) and (max-width:800px)
+{
+    h2{
+        font-family: 'Oregano', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5em;
+        margin-top: 0;
+        margin-bottom: 5px;
+        color:black;
+        }
+    #basic_settings_container{
+        display: block;
+        height: 200px;
+        background-color:none;
+        box-shadow: none;
+    }
+    label {
+        vertical-align: top;
+        color: black;
+        margin-left: 2px;
+        font-size: 0.8em;
+    }
+    #basic_settings_container1 {
+        width: 95%;
+
+    }
+    #basic_settings_container2 {
+        width: 95%;
+        float: left;
+        height: 200px;
+        margin-top: 40px;
+        padding: 10px;
+        margin-right: auto;   
+    }
+    #basic_settings_container3 {
+        width: 95%;
+        float: left;
+        height: 150px;
+        margin-top: 40px;
+        margin-right: auto;   
+    }
+    #advanced_settings_container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 460px;
+        background-color: white;
+        box-shadow: 0px 1px 15px 0px black
+    }
+    .advanced_settings_subcontainer{
+        width: 40%;
+    }
+}

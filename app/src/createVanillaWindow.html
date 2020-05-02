@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Vanilla Server</title>
+        <!-- FontAwesome-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Oregano Font-->
+        <link href="https://fonts.googleapis.com/css?family=Oregano&display=swap" rel="stylesheet">
+        <!-- Saira Font -->
+        <link href="https://fonts.googleapis.com/css?family=Saira&display=swap" rel="stylesheet">
+    <!-- Linking of StyleSheet-->
+    <link rel="stylesheet" href="./css/createVanillaStyle.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <div id="black_patch"></div>
+        <div id="loading_panel">
+            <img id="status_image" style="margin-top:20px;margin-left:auto;margin-right:auto;display:block" src="../resources/images/crafting.gif" width="150" height="150">
+            <h6 id="status" style="text-align: center;padding-top: 5px;"> Crafting Server</h6>
+            <h6 id="status_description" style="text-align: justify;"></h6>
+        </div>
+
+        <!-- Start of the page view-->
+        <div id="headerbar">
+            &nbsp&nbsp<img src="../resources/images/java.png" style="width:50px;height:50px;display:inline-block">
+            <h2 style="display: inline-block;vertical-align: top;padding-top: 10px;">&nbsp&nbspCraft Vanilla Server</h2>
+        </div>
+        <div id="basic_settings_container">
+                <!-- Containers -->
+                <div id="basic_settings_container1" style="margin-left: 0;">
+                    <div id="top_row_container" style="width: 100%;margin-bottom: 15px;display: block;">
+                    <div style=";width: 20.33%;padding: 2px;display: inline-block;">
+                        <h2> Version</h2>
+                        <select id="versions_list" style="width: 100%;">
+
+                        </select>
+                    </div>
+                    <div style="width: 20.33%;padding: 2px;display: inline-block;">
+                            <h2> IP Address</h2>
+                            <input type="text" style="width: 100%;" id="server_ip">
+                    </div>
+                    <div style="margin-left:25px;width: 14.33%;padding: 2px;display: inline-block;">
+                            <h2> Port</h2>
+                            <input type="number" id="server_port" style="width: 100%;" value="25565" step="1">
+                    </div>
+                       <div style="margin-left:25px;width: 25.33%;padding: 2px;display: inline-block;">
+                            <h2> Max Players</h2>
+                            <input type="number" id="max_players" style="width: 80px;" value="15" step="1" min="2">
+                    </div>
+                    </div>
+                    <h2> Description</h2>
+                    <textarea style="width: 95%;height: 50px;padding: 5px;" id="server_description" > Welcome to my new minecraft server :)</textarea>
+                </div>
+
+                <div id="basic_settings_container2">
+                    <h2>Difficulty</h2>
+                        <input type="radio" name="difficulty" id="difficulty" value="easy" class="radio" checked> <label> Easy </label> &nbsp&nbsp&nbsp<input type="radio"  id="difficulty" name="difficulty" value="peaceful" class="radio"> <label> Peaceful </label>&nbsp&nbsp&nbsp<input type="radio" name="difficulty" value="normal" class="radio"> <label> Normal </label>&nbsp&nbsp&nbsp<input type="radio" name="difficulty" value="hard" class="radio"> <label> Hard </label>
+                    <br>
+                    <h2>World Type</h2>
+                    <input type="radio" name="levelType" value="default" class="radio" checked> <label> Default </label> &nbsp&nbsp&nbsp<input type="radio" name="levelType" value="flat" class="radio"> <label> Flat </label>&nbsp&nbsp&nbsp<input type="radio" name="levelType" value="amplified" class="radio"> <label> Amplified </label>&nbsp&nbsp&nbsp<input type="radio" name="levelType" value="largebiomes" class="radio"> <label> Large Biomes </label>
+                    <br>
+                    <input type="radio" name="levelType" value="buffet" class="radio"> <label> Buffet </label>
+                </div>
+                <div id="basic_settings_container3">
+                        <h2>Server Type</h2>
+                        <input type="radio" name="onlineMode" value="true" class="radio"> <label> Online </label> &nbsp&nbsp&nbsp<input type="radio" name="onlineMode" value="false" class="radio" checked> <label> Offline </label>
+                        <br>
+                        <h2>World Gamemode</h2>
+                        <input type="radio" name="gamemode" value="survival" class="radio" checked> <label> Survival </label> &nbsp&nbsp&nbsp<input type="radio" name="gamemode" value="creative" class="radio"> <label> Creative </label>&nbsp&nbsp&nbsp<input type="radio" name="gamemode" value="adventure" class="radio"> <label> Adventure </label>
+                </div>
+        </div>
+        <br>
+        <br>
+        <div id="advanced_settings_container">
+            <h2 id="advanced_settings_header">&nbsp<i class="fa fa-arrow-right" aria-hidden="true"></i> Advanced Settings</h2>
+            <div id="advanced_settings_content" style="width: 100%; margin-top: -20px;">
+                <div class="advanced_settings_subcontainer">
+                    <h2> Allow Flight</h2>
+                    <input type="radio" name="allowFlight" value="true" class="radio"> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="allowFlight" value="false" class="radio" checked> <label> No </label>
+                    <h2> Allow Nether</h2>
+                    <input type="radio" name="allowNether" value="true" class="radio" checked> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="allowNether" value="false" class="radio"> <label> No </label>
+                    <h2> Spawn Monsters</h2>
+                    <input type="radio" name="spawnMonsters" value="true" class="radio" checked> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="spawnMonsters" value="false" class="radio"> <label> No </label>
+                    <h2> Spawn NPCs</h2>
+                    <input type="radio" name="spawnNpcs" value="true" class="radio" checked> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="spawnNpcs" value="false" class="radio"> <label> No </label>
+                    <h2> Spawn Animals</h2>
+                    <input type="radio" name="spawnAnimals" value="true" class="radio" checked> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="spawnAnimals" value="false" class="radio" > <label> No </label>
+                    <h2> Generate Structures</h2>
+                    <input type="radio" name="generateStructures" value="true" class="radio" checked> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="generateStructures" value="false" class="radio" > <label> No </label>
+                    <h2> Enable RCON</h2>
+                    <input type="radio" name="enableRcon" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="enableRcon" value="false" class="radio" checked> <label> No </label>
+                </div>
+                 <div class="advanced_settings_subcontainer">
+                    <h2> Enable Query</h2>
+                    <input type="radio" name="enableQuery" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="enableQuery" value="false" class="radio" checked> <label> No </label>
+                    <h2> Enforce Whitelist</h2>
+                    <input type="radio" name="enforceWhitelist" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="enforceWhitelist" value="false" class="radio" checked> <label> No </label>
+                    <h2> Whitelist</h2>
+                    <input type="radio" name="whitelist" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="whitelist" value="false" class="radio" checked> <label> No </label>
+                    <h2> Force Gamemode</h2>
+                    <input type="radio" name="forceGamemode" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="forceGamemode" value="false" class="radio" checked> <label> No </label>
+                    <h2> Prevent Proxies</h2>
+                    <input type="radio" name="preventProxyConnections" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="preventProxyConnections" value="false" class="radio" checked> <label> No </label>
+                    <h2> Use Native Transport</h2>
+                      <input type="radio" name="useNativeTransport" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="useNativeTransport" value="false" class="radio" checked> <label> No </label>
+                      <h2> Enable Command Block</h2>
+                        <input type="radio" name="enableCommandBlock" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="enableCommandBlock" value="false" class="radio" checked> <label> No </label>
+                </div>
+                <div class="advanced_settings_subcontainer">
+                        <h2>Enable Snooper </h2>  
+                        <input type="radio" name="enableSnooper" value="true" class="radio" checked> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="enableSnooper" value="false" class="radio" > <label> No </label>
+                        <h2> Broadcast RCON to Ops</h2>
+                        <input type="radio" name="broadcastRconToOps" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="broadcastRconToOps" value="false" class="radio" checked> <label> No </label>
+                        <h2> Enable PvP</h2>
+                        <input type="radio" name="pvp" value="true" class="radio" checked> <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="pvp" value="false" class="radio"> <label> No </label>
+                        <h2>Hardcore </h2>
+                        <input type="radio" name="hardcore" value="true" class="radio" > <label> Yes </label> &nbsp&nbsp&nbsp<input type="radio" name="hardcore" value="false" class="radio" checked> <label> No </label>
+                        <h2>Max Build Height</h2>
+                        <input type="number" value="256" step="1" min="5" id="maxBuildHeight" style="width: 70px;">
+                        <h2>View Distance</h2>
+                        <input type="number" value="16" step="1" min="3" max="32" id="viewDistance" style="width: 70px;">
+                        <h2> World Name</h2>
+                        <input type="text" id="levelName" value="world">
+                </div>
+                <div class="advanced_settings_subcontainer" >
+                        <h2> Player Idle Timeout</h2>
+                        <input type="number" id="playerIdleTimeout" value=0 min="0" step="1">
+                        <h2> Spawn Protection</h2>
+                        <input type="number" id="spawnProtection" value=16 min="0" step="1">
+                        <h2> Max World Size</h2>
+                        <input type="number" id="maxWorldSize" value=29999984 min="1" max="29999984" step="1">
+                        <h2> Level Seed</h2>
+                        <input type="text" id="levelSeed" value="">
+                        <h2> RCON Password</h2>
+                        <input type="password" id="rconPassword">
+                        <h2> RCON Port</h2>
+                        <input type="number" id="rconPort" value="25575" min="1" max="65534" step="1">
+                        <h2> Query Port</h2>
+                        <input type="number" id="queryPort" value="25565" min="1" max="65534" step="1">
+                </div>
+                <div class="advanced_settings_subcontainer" >
+                        <h2> OP Permission Level</h2>
+                        <input type="number" style="width:80px" id="opPermissionLevel" value="4" max="4" min="1" step="1">
+                        <h2> Generator Settings</h2>
+                        <input type="text" id="generatorSettings">
+                                            <h2>Function Permission Level</h2>
+                    <input type="number" value="2" min="1" max="4" step="1" id="functionPermissionLevel" style="width:80px;">
+                    <h2>N/W Compression Threshold</h2>
+                    <input type="number" value="256" min="-1" step="1" id="networkCompressionThreshold" style="width:80px;">
+                    <h2>Resource Pack </h2>
+                    <input type="text" placeholder="Enter Resource Pack URI" id="resourcePackURI">
+                    <h2>Resource Pack <span>sha</span></h2><span>
+                    <input type="text" placeholder="Enter Resource Pack URI" id="resourcePackSha">
+                </div>
+                <div class="advanced_settings_subcontainer">
+
+                </div>
+            </div>
+        </div>
+        <button id="craftServerButton"><h2>Craft Server (In Folder) </h2></button>
+        <br>
+        <button id="closeButton" onclick="closeWindow()"><h2> Close </h2></button>
+
+    </div>
+        <!-- Craft Vanilla Server Script-->
+        <script src="./js/frontend/craftVanillaServer.js"></script>
+        <script>
+            var versions;
+            var advanced_settings_header = document.getElementById("advanced_settings_header");
+            var is_advanced_expanded = false;
+            advanced_settings_header.addEventListener("click",()=>{
+                if(is_advanced_expanded==false)
+                {
+                    document.getElementById("advanced_settings_content").style.display="block";
+                    advanced_settings_header.innerHTML=`&nbsp<i class="fa fa-arrow-down" aria-hidden="true"></i> Advanced Settings</h2>`
+
+                    is_advanced_expanded=true;
+                }
+                else
+                {
+                    document.getElementById("advanced_settings_content").style.display="none";
+                    advanced_settings_header.innerHTML=`&nbsp<i class="fa fa-arrow-right" aria-hidden="true"></i> Advanced Settings</h2>`
+                    is_advanced_expanded=false;
+
+
+                }
+            })
+            var loading_panel = document.getElementById("loading_panel")
+            var black_patch = document.getElementById("black_patch")
+            const electron = require("electron");
+            var {ipcRenderer, dialog} = electron
+            // Get ALL MINECRAFT VERSIONS LIST
+                        var versions_select_box = document.getElementById("versions_list");
+                        fetch("https://launchermeta.mojang.com/mc/game/version_manifest.json",{
+                            method:"GET"
+                        }).then(response =>response.json()).then(data=>{
+                            console.log(data)
+                            versions = data.versions.filter((version)=>{
+                                return version.type == "release";
+                            });
+                            versions_select_box.innerHTML="";
+                            versions.forEach(version=>{
+                            versions_select_box.innerHTML+=`
+                            <option value="${version.id}"> ${version.id} </option>
+                            `
+                            })          
+                        })
+            // Get User LOCAL IP Address
+                        function getUserIP(onNewIP) { //  onNewIp - your listener function for new IPs
+                                //compatibility for firefox and chrome
+                                var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
+                                var pc = new myPeerConnection({
+                                    iceServers: []
+                                }),
+                                noop = function() {},
+                                localIPs = {},
+                                ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g,
+                                key;
+
+                                function iterateIP(ip) {
+                                    if (!localIPs[ip]) onNewIP(ip);
+                                    localIPs[ip] = true;
+                                }
+
+                                //create a bogus data channel
+                                pc.createDataChannel("");
+
+                                // create offer and set local description
+                                pc.createOffer().then(function(sdp) {
+                                    sdp.sdp.split('\n').forEach(function(line) {
+                                        if (line.indexOf('candidate') < 0) return;
+                                        line.match(ipRegex).forEach(iterateIP);
+                                    });
+
+                                    pc.setLocalDescription(sdp, noop, noop);
+                                }).catch(function(reason) {
+                                    // An error occurred, so handle the failure to connect
+                                });
+
+                                //listen for candidate 
+                                pc.onicecandidate = function(ice) {
+                                    if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return;
+                                    ice.candidate.candidate.match(ipRegex).forEach(iterateIP);
+                                };
+                            }
+
+            // Get User's IP
+            getUserIP(function(ip){
+                document.getElementById("server_ip").value=ip;
+            });
+
+
+//*********************** CRAFT SERVER ACTION **************************************/
+document.getElementById("craftServerButton").addEventListener("click",(e)=>{
+e.preventDefault();
+console.log("%c Crafting Server...","color:blue;font-weight:bold")
+
+
+ /************************* FETCH ALL PARAMETERS *******************/
+ var server_version = document.getElementById("versions_list").value // server-version
+        var server_ip = document.getElementById("server_ip").value; // server-ip
+        var server_port = document.getElementById("server_port").value; // server-port
+        var max_players = document.getElementById("max_players").value; // max-players
+        var motd = document.getElementById("server_description").value; // motd
+        var difficulty = document.querySelector("input[name='difficulty']:checked").value; // difficulty
+        var levelType = document.querySelector("input[name='levelType']:checked").value; // level-type
+        var onlineMode = document.querySelector("input[name='onlineMode']:checked").value // online-mode
+        var gameMode = document.querySelector("input[name='gamemode']:checked").value // gamemode
+        var allowFlight = document.querySelector("input[name='allowFlight']:checked").value // allow-flight
+        var allowNether = document.querySelector("input[name='allowNether']:checked").value // allow-nether
+        var spawnMonsters = document.querySelector("input[name='spawnMonsters']:checked").value // spawn-monsters
+        var spawnNpcs = document.querySelector("input[name='spawnNpcs']:checked").value // spawn-npcs
+        var spawnAnimals = document.querySelector("input[name='spawnAnimals']:checked").value // spawn-animals
+        var generateStructures = document.querySelector("input[name='generateStructures']:checked").value // generate-structures
+        var enableRcon = document.querySelector("input[name='enableRcon']:checked").value // enable-rcon
+        var enableQuery = document.querySelector("input[name='enableQuery']:checked").value // enable-query
+        var enforceWhitelist = document.querySelector("input[name='enforceWhitelist']:checked").value // enforce-whitelist
+        var whitelist = document.querySelector("input[name='whitelist']:checked").value // whitelist
+        var forceGamemode = document.querySelector("input[name='forceGamemode']:checked").value // forceGamemode
+        var preventProxyConnections = document.querySelector("input[name='preventProxyConnections']:checked").value // prevent-proxy-connections
+        var useNativeTransport = document.querySelector("input[name='useNativeTransport']:checked").value; // use-native-transport
+        var enableCommandBlock = document.querySelector("input[name='enableCommandBlock']:checked").value // enable-command-block
+        var enableSnooper = document.querySelector("input[name='enableSnooper']:checked").value // enable-snooper
+        var broadcastRconToOps = document.querySelector("input[name='broadcastRconToOps']:checked").value  // broadcast-rcon-to-ops
+        var pvp = document.querySelector("input[name='pvp']:checked").value  // broadcast-console-to-ops
+        var hardcore = document.querySelector("input[name='hardcore']:checked").value  // hardcore
+        var maxBuildHeight = document.getElementById("maxBuildHeight").value // max-build-height
+        var viewDistance = document.getElementById("viewDistance").value // view-distance
+        var levelName = document.getElementById("levelName").value // level-name
+        var playerIdleTimeout = document.getElementById("playerIdleTimeout").value; // player-idle-timeout
+        var spawnProtection = document.getElementById("spawnProtection").value;  // spawn-protection
+        var maxWorldSize = document.getElementById("maxWorldSize").value;  // max-world-size
+        var levelSeed = document.getElementById("levelSeed").value; // level-seed
+        var rconPassword = document.getElementById("rconPassword").value; // rcon-password
+        var rconPort = document.getElementById("rconPort").value; // rcon-port
+        var queryPort = document.getElementById("queryPort").value; // query-port
+        var opPermissionLevel = document.getElementById("opPermissionLevel").value; //op-permission-level
+        var generatorSettings = document.getElementById("generatorSettings").value; //generator-settings
+        var functionPermissionLevel = document.getElementById("functionPermissionLevel").value; // function-permission-level
+        var networkCompressionThreshold = document.getElementById("networkCompressionThreshold").value; // network-compression-threshold
+        var resourcePackURI = document.getElementById("resourcePackURI").value; // resource-pack
+        var resourcePackSha = document.getElementById("resourcePackSha").value; // resource-pack-sha1
+/************** LOG ALL PARAMETRS ***************************/
+if(process.env.NODE_ENV=="development")
+    {
+        console.log(`%c Server Version : ${server_version}`,'color:green;font-weight:bold')
+        console.log(`%c Server IP : ${server_ip}`,'color:green;font-weight:bold')
+        console.log(`%c Server Port : ${server_port}`,'color:green;font-weight:bold')
+        console.log(`%c Max Players : ${max_players}`,'color:green;font-weight:bold')
+        console.log(`%c Server Description : ${motd}`,'color:green;font-weight:bold')                        
+        console.log(`%c Difficulty : ${difficulty}`,'color:green;font-weight:bold')
+        console.log(`%c Level Type : ${levelType}`,'color:green;font-weight:bold')
+        console.log(`%c Online Mode : ${onlineMode}`,'color:green;font-weight:bold')
+        console.log(`%c Game Mode : ${gameMode}`,'color:green;font-weight:bold')
+        console.log(`%c Allow Flight : ${allowFlight}`,'color:green;font-weight:bold')
+        console.log(`%c Allow Nether : ${allowNether}`,'color:green;font-weight:bold')
+        console.log(`%c Spawn Monsters  : ${spawnMonsters}`,'color:green;font-weight:bold')
+        console.log(`%c Spawn Npcs  : ${spawnNpcs}`,'color:green;font-weight:bold')
+        console.log(`%c Spawn Animals  : ${spawnAnimals}`,'color:green;font-weight:bold')
+        console.log(`%c Generate Structures  : ${generateStructures}`,'color:green;font-weight:bold')
+        console.log(`%c Enable Rcon  : ${enableRcon}`,'color:green;font-weight:bold')
+        console.log(`%c Enable Query  : ${enableQuery}`,'color:green;font-weight:bold')
+        console.log(`%c Enforce Whitelist  : ${enforceWhitelist}`,'color:green;font-weight:bold')
+        console.log(`%c Whitelist  : ${whitelist}`,'color:green;font-weight:bold')
+        console.log(`%c Force Gamemode  : ${forceGamemode}`,'color:green;font-weight:bold')
+        console.log(`%c Prevent Proxy Connections  : ${preventProxyConnections}`,'color:green;font-weight:bold')
+        console.log(`%c Use Native Transport : ${useNativeTransport}`,'color:green;font-weight:bold')
+        console.log(`%c Enable Command Block: ${enableCommandBlock}`,'color:green;font-weight:bold')
+        console.log(`%c Enable Snooper: ${enableSnooper}`,'color:green;font-weight:bold')
+        console.log(`%c Broadcast RCON To Ops: ${broadcastRconToOps}`,'color:green;font-weight:bold')
+        console.log(`%c PvP: ${pvp}`,'color:green;font-weight:bold')    
+        console.log(`%c Hardcore: ${hardcore}`,'color:green;font-weight:bold')      
+        console.log(`%c Max Build Height: ${maxBuildHeight}`,'color:green;font-weight:bold')        
+        console.log(`%c View Distance: ${viewDistance}`,'color:green;font-weight:bold')                   
+        console.log(`%c Level Name: ${levelName}`,'color:green;font-weight:bold')   
+        console.log(`%c Player Idle Timeout: ${playerIdleTimeout}`,'color:green;font-weight:bold')   
+        console.log(`%c Spawn Protection: ${spawnProtection}`,'color:green;font-weight:bold')   
+        console.log(`%c Max World Size: ${maxWorldSize}`,'color:green;font-weight:bold')
+        console.log(`%c Level Seed: ${levelSeed}`,'color:green;font-weight:bold')
+        console.log(`%c Rcon Password: ${rconPassword}`,'color:green;font-weight:bold')
+        console.log(`%c Rcon Port: ${rconPort}`,'color:green;font-weight:bold')
+        console.log(`%c Query Port: ${queryPort}`,'color:green;font-weight:bold')
+        console.log(`%c OP Permission Level: ${opPermissionLevel}`,'color:green;font-weight:bold')
+        console.log(`%c Generator Settings: ${generatorSettings}`,'color:green;font-weight:bold')
+        console.log(`%c Function Permission Level: ${functionPermissionLevel}`,'color:green;font-weight:bold')
+        console.log(`%c Network Compression Threshold: ${networkCompressionThreshold}`,'color:green;font-weight:bold')
+        console.log(`%c Resource Pack: ${resourcePackURI}`,'color:green;font-weight:bold')
+        console.log(`%c Resource Pack SHA: ${resourcePackSha}`,'color:green;font-weight:bold')     
+    }
+/******************* VALIDATE ALL PARAMETERS *************************/
+var error=0;
+        if(server_version=="" || server_version==null)
+            {
+                error=1;
+                alert("Error: Select an appropriate server version.")
+            }       
+            if(/\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}\b/.test(server_ip)==false)
+            {
+                error=1;
+                alert("Enter A Valid IP Address")
+            }
+            if(server_port==null || server_port=="" || server_port<0)
+            {
+                error=1
+                alert("Error : Please Specify a valid server port.")
+            }
+            if(max_players>2147483647 || max_players<2) 
+            {
+                error=1;
+                alert("Maximum players should be in the range 1 - 2147483647")
+            }                                     
+            if(maxBuildHeight<5)
+            {
+                    error=1
+                    alert("Max Build Height cannot be less than 5");
+                    document.getElementById("maxBuildHeight").value=5;
+            }
+            if(viewDistance<3 || viewDistance>32)
+            {
+                    error=1
+                    alert("View Distance should be in the range of 3 to 32");
+            }
+            if(levelName=="")
+            {
+                    error=1;
+                    alert("World Name cannot be blank");
+            }
+            if(playerIdleTimeout<0)
+            {
+                alert("Idle time (in minutes) cannot be negative");
+            }
+            if(spawnProtection<0)
+            {
+                error=1;
+                alert("Spawn Protection cannot be negative!");
+            }
+            if(maxWorldSize<0 || maxWorldSize>29999984)
+            {
+                error=1;
+                alert("Max World Size should be in the range 1-29999984");
+            }
+            if(rconPort<1 || rconPort>65534)
+            {
+                error=1;
+                alert("Error: RCON Port should be in the range 1-65534")
+            }
+            if(queryPort<1 || queryPort>65534)
+            {
+                error=1;
+                alert("Error: RCON Port should be in the range 1-65534")
+            }
+            if(opPermissionLevel<1 || opPermissionLevel>4)
+            {
+                error=1;
+                alert("Error: OP Permission Level should be in the range 1-4.");
+            }
+            if(functionPermissionLevel<1 || functionPermissionLevel>4)
+            {
+                error=1;
+                alert("Error: function permission level should be in the range 1-4");
+            }
+            if(networkCompressionThreshold<-1)
+            {
+                error=1;
+                alert("Please enter a valid network compression threshold");
+            }
+
+/************************** CHECK FOR ERROR **************/
+            if(error==0)
+        {
+            console.log("All Params Validated");
+            // Create The Specification JSON File.
+            var serverSpecifications = { 
+            "version_url":versions.filter((version)=>{return version.id==server_version}),
+            // Server Related Specification
+            "server-ip":server_ip,
+            "server-port":server_port,
+            "max-players":max_players,
+            "motd":motd,
+            "gamemode":gameMode,
+            "difficulty":difficulty,
+            "level-type":levelType,
+            "online-mode":onlineMode,
+            "allow-flight":allowFlight,
+            "allow-nether":allowNether,
+            "spawn-monsters":spawnMonsters,
+            "spawn-npcs":spawnNpcs,
+            "spawn-animals":spawnAnimals,
+            "generate-structures":generateStructures,
+            "enable-rcon":enableRcon,
+            "enable-query":enableQuery,
+            "enforce-whitelist":enforceWhitelist,
+            "white-list":whitelist,
+            "force-gamemode":forceGamemode,
+            "prevent-proxy-connections":preventProxyConnections,
+            "use-native-transport":useNativeTransport,
+            "enable-command-block":enableCommandBlock,
+            "snooper-enabled":enableSnooper,
+            "broadcast-rcon-to-ops":broadcastRconToOps,
+            "pvp":pvp,
+            "hardcore":hardcore,
+            "max-build-height":maxBuildHeight,
+            "view-distance":viewDistance,
+            "level-name":levelName,
+            "player-idle-timeout":playerIdleTimeout,
+            "spawn-protection":spawnProtection,
+            "max-world-size":maxWorldSize,
+            "level-seed":levelSeed,
+            "rcon.password":rconPassword,
+            "rcon.port":rconPort,
+            "query.port":queryPort,
+            "op-permission-level":opPermissionLevel,
+            "generator-settings":generatorSettings,
+            "function-permission-level":functionPermissionLevel,
+            "network-compression-threshold":networkCompressionThreshold,
+            "resource-pack":resourcePackURI,
+            "resource-pack-sha1":resourcePackSha
+            }
+            // Call the backend function to craftVanillaServer passing the specs.
+            ipcRenderer.send('craftVanillaServer',serverSpecifications);
+            // Render the loading panel at user end
+            loading_panel.style.display="block";
+            loading_panel.style.opacity="1"
+            black_patch.style.display="block";
+            document.getElementById("status_image").src='../resources/images/crafting.gif';
+            document.getElementById("status").innerHTML="Crafting Server.."
+            document.getElementById("status_description").innerHTML=""
+            black_patch.style.opacity="1"; 
+            }
+        else{
+            console.log("Error in validation")
+        }   
+})
+            
+            function startServer(path)
+            {
+                ipcRenderer.send('startServer',{'path':path,'serverType':'vanilla'});
+                document.getElementById("status").innerHTML="Server Has Been Launched";
+                document.getElementById("status_description").innerHTML=`
+                Your server has been launched [<strong> Please wait if the console is not yet visible </strong>]
+                <br>
+                <button class="loading_panel_button" onclick="cancel()"> Craft Another Server </button>
+                <br>
+                <button class="loading_panel_button" onclick="closeWindow()"> Close </button>
+                `
+            }
+            ipcRenderer.on("server_success",(e,data)=>{
+                console.log(data.path)
+                document.getElementById("status_image").src="../resources/images/success.png";
+                if(data.platform=="win32")
+                {
+                    document.getElementById("status").innerHTML=`<p style="color:green"><b> Crafted Successfully :) </b></p>`
+                    document.getElementById("status_description").innerHTML=`
+                    <p> You can launch your server by executing the <b>server.bat</b> file located at <b> ${data.path} </b><p>
+
+                    <br> Click 'Start Server' to launch your server for the first time.<br/>
+                    <button class="loading_panel_button" onclick="startServer('${data.path}')"> Start Server </button>
+                    <br>
+                    <button class="loading_panel_button" onclick="cancel()"> Cancel </button>
+
+                    `
+                }
+                else if(data.platform=="linux")
+                {
+                    document.getElementById("status").innerHTML=`<h4 style="color:green"><b> Crafted Successfully :) </h4></p>`
+                    document.getElementById("status_description").innerHTML=`
+                    <p> You can launch your server by executing the <b>server.sh</b> script located at <b> ${data.path} </b><p>
+
+                    <br> Click 'Start Server' to launch your server for the first time.<br/>
+                    <button class="loading_panel_button" onclick="startServer('${data.path}')"> Start Server </button>
+                    <br>
+                    <button class="loading_panel_button" onclick="cancel()"> Cancel </button>
+                    `
+                }
+     
+            })
+            ipcRenderer.on("server_failure",(e,data)=>{
+                console.log(data.message);
+                document.getElementById("status_image").src="../resources/images/failure.png";
+                document.getElementById("status").innerHTML=`
+                <h3> Error : Failed To Craft Server :( </h3>`
+                document.getElementById("status_description").innerHTML=`
+                <p> ${data.message} </p>
+                <button class="loading_panel_button" onclick="cancel()"> Cancel </button>
+
+                `
+            })
+            ipcRenderer.on("server_failure_start",(e,data)=>{
+                console.log(data.message);
+                document.getElementById("status_image").src="../resources/images/failure.png";
+                document.getElementById("status").innerHTML=`
+                <h3> Error : Failed To Launch the Server. :( </h3>`
+                document.getElementById("status_description").innerHTML=`
+                <p> ${data.message} </p>
+                <button class="loading_panel_button" onclick="cancel()"> Cancel </button>
+
+                `
+            })
+
+            function cancel(){
+            // Remove the loading panel out of view
+            loading_panel.style.display="none";
+            black_patch.style.display="none";
+            }
+
+            function closeWindow(){
+                window.close();
+            }
+</script>
+</body>
+</html>

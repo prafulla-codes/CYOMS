@@ -1,0 +1,315 @@
+
+
+html, body{
+  /*  background: linear-gradient(to bottom right, rgba(17, 55, 191, 0.91) 11.22%, rgba(96, 197, 210, 0.93) 97.36%); */
+    width: 100%;
+    font-family: 'Saira',sans-serif;
+    background: linear-gradient(to bottom right,blue, cyan);
+
+    color: #5F5656;
+    margin: 0;
+    height: 100%;
+}
+#black_patch{
+    width:100%;
+    top: 0;
+    height:100%;
+    opacity: 1;
+    z-index: 3;
+    position: absolute;
+    display: none;
+    background-color: rgba(0,0,0,0.95);
+}
+
+#container {
+    min-height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+    background: linear-gradient(to bottom right,blue, cyan);
+
+}
+#feedback_container {
+    width: 600px;
+    height: 300px;
+    background-color: #ffff;
+    position: absolute;
+    display: none;
+    color: black;
+    padding: 15px;
+    z-index: 4;
+    top: 25%;
+    left: 35%;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+h2{
+font-family: 'Oregano', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 1.8em;
+margin-top: 0;
+}
+
+p{
+    font-family: 'Saira',sans-serif;
+    color: #5F5656;
+    font-size: 0.9rem;
+}
+
+/* Pulse */
+@keyframes scale {
+    100%{
+        transform: scale(1.03);
+    }
+}
+@keyframes quick_setup_gradient_change {
+    100%{
+        background: linear-gradient(to bottom right,red,yellow);
+
+    }
+}
+.cyoms_container{
+background: #FFFFFF;
+box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.80);
+width: 85%;
+color:black;
+min-height: 60px;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+display: block;
+}
+
+#feedback_option:hover {
+    background: linear-gradient(to bottom right,black,purple);
+    color:white;
+    cursor: pointer;
+}
+#feedback_option:hover i {
+    color:yellow;
+}
+#feedback_option:hover p {
+    color:white;
+}
+
+.cyoms_container:hover{
+    animation: scale 2s forwards;
+
+}
+
+/****************** Buttons ********/
+.cyoms_button {
+background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.27);
+width: 85%;
+height: 50PX;
+color:black;
+margin-left: auto;
+margin-right: auto;
+text-align: CENTER;
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 15px;
+padding-right: 15px;
+display: block;
+}
+
+.cyoms_button h2 {
+    display: inline-block;
+    margin-top: -12px;
+}
+
+#quick_setup_button {
+background: linear-gradient(102.87deg, #57CF0D 20.86%, rgba(255, 255, 255, 0) 138.41%);
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 22px;
+width: 88%;
+height: 3.5rem;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+padding-top: 10px;
+display: block;
+}
+
+#quick_setup_button:hover{
+    animation: quick_setup_gradient_change 0.2s forwards;
+    cursor: pointer;
+}
+
+/***************************************/
+#headerbar {
+width: 100%;
+height: 75px;
+margin:0;
+padding-top: 10px;
+background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.27);
+}
+#footer_slim {
+background-color: white;
+width: 100%;
+color: black;
+font-size: 1.4em;
+height: 40px;
+position: fixed;
+bottom: 0;
+}
+#footer_slim h2 {
+    float:right;
+    padding-right: 10px;
+    font-size: 1.2em;
+}
+#createVanilla{
+    color:black;
+}
+#createVanilla:hover {
+    cursor: pointer;
+    animation: scale 2s forwards;
+    box-shadow: 0px 10px 15px 0px rgb(0, 0, 0);
+
+}
+
+/******** Panes **************/
+#left_pane{
+    float:left;
+    height:100%;
+    display: inline-block;
+    width: 28.33%;
+    margin: 0;
+    padding: 0;
+}
+#center_pane{
+    display: inline-block;
+    width: 38.33%;
+    margin: 0;
+    height:100%;
+    padding: 0;
+}
+#right_pane{
+    float: right;
+    width: 33.33%;
+    height:100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+/****************************/
+
+/********* ICONS ************/
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    display: inline-block;
+}
+/****************************/
+
+/**** CHAT BOX*****/
+.talktext{
+    padding: 1em;
+    text-align: left;
+    font-size:1.2em;
+    line-height: 1.5em;
+  }
+  .talktext p{
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
+  .talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: relative;
+	width: 35%;
+    height: auto;
+	background-color: white;
+}
+
+
+.round{
+    border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+  
+  }
+  .tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: white transparent transparent white;
+}
+
+
+#steve_container:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width:801) and (max-width:1500px)
+{
+    h2{
+        font-family: 'Oregano', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2em;
+        margin-top: 0;
+        }
+     .talktext{
+            padding: 0.6em;
+            text-align: left;
+            font-size:0.8em;
+            line-height: 1.5em;
+          }
+
+}
+
+@media only screen and (min-width:0px) and (max-width:800px)
+{
+    #left_pane{
+        float:left;
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    #center_pane{
+        float:left;
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    #right_pane{
+        float:left;
+        display: block;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+}
