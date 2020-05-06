@@ -18,6 +18,11 @@ Server configuration is completely GUI based. No need to download server jar fil
 
 Checkout the contributions guide - [CONTRIBUTING.md](CONTRIBUTING.md) to start contributing to this project.
 
+# Join Our Slack
+
+Feel free to join our community on slack
+
+[<img src="resources/images/join_slack.png" width=50% height=40%>](https://join.slack.com/t/cyomsdevelopers/shared_invite/zt-e730tphg-_IelnN26kcCGkbsZTjjVSQ)
 
 
 ## For more information visit Official Website https://www.cyoms.tech
