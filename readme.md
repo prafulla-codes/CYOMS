@@ -2,6 +2,8 @@
 # Craft Your Own Minecraft Server | CYOMS
 ![Downloads](https://img.shields.io/github/downloads/Pika1998/CYOMS/total)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/Pika1998/CYOMS)
+![Open-Source](https://img.shields.io/badge/contributions-welcome-brightgreen)
+
 
 <img src="resources/images/cyoms_cover_page.png" width="100%">
 
