@@ -90,10 +90,7 @@ function handleSquirrelEvent(application) {
 };
 
 
-// SET ENV TO PRODUCTION 
-process.env.NODE_ENV="development"
-// SET API
-process.env.mail_api_key="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";
+
 sgMail.setApiKey(process.env.mail_api_key);
 
 // Initialize User Screen widths and heights
