@@ -20,7 +20,7 @@ Anyone with the basic knowledge of **HTML, CSS and JS** can make their contribut
 
 Feel free to join our community on slack
 
-[<img src="resources/images/join_slack.png">](https://join.slack.com/t/cyomsdevelopers/shared_invite/zt-e730tphg-_IelnN26kcCGkbsZTjjVSQ)
+[<img src="resources/images/join_slack.png" width=50% height=40%>](https://join.slack.com/t/cyomsdevelopers/shared_invite/zt-e730tphg-_IelnN26kcCGkbsZTjjVSQ)
 
 
 ## File Structure
