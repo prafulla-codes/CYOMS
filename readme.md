@@ -5,7 +5,7 @@
 
 <img src="resources/images/cyoms_cover_page.png" width="100%">
 
-#### CYOMS is a desktop application to create minecraft servers quickly and easily.
+#### CYOMS is an open-source desktop application to create minecraft servers quickly and easily.
 
 Server configuration is completely GUI based. No need to download server jar files anymore!
 # Download Latest Version
@@ -13,6 +13,12 @@ Server configuration is completely GUI based. No need to download server jar fil
 [![](resources/images/download_windows_cyoms.png)](https://github.com/Pika1998/CYOMS/releases/download/v2.0.0/CYOMS_v2_Setup.exe)
 
 [![](resources/images/download_linux_cyoms.png)](https://github.com/Pika1998/CYOMS/releases/download/v2.0.0/cyoms_2.0.0_amd64.deb)
+
+# Start Contributing
+
+Checkout the contributions guide - [CONTRIBUTING.md](CONTRIBUTING.md) to start contributing to this project.
+
+
 
 ## For more information visit Official Website https://www.cyoms.tech
 # Preview 
